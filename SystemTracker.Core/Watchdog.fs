@@ -73,5 +73,3 @@ type Watchdog(configuration: WatchdogConfiguration, clock: IClock) =
 
     interface IDisposable with
         member this.Dispose() = timer.Dispose()
-
-    member this.Dispose() = (this :> IDisposable).Dispose()
